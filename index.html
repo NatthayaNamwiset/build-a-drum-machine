@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> a Drum Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <div id="drum-machine">
+        <!-- part1 -->
+        <div id="drum-pads" class="drum-pads">
+            <button class="drum-pad" id="Q">Q
+                <audio class="clip" id="Q" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="W">W
+                <audio class="clip" id="W" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="E">E
+                <audio class="clip" id="E" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="A">A
+                <audio class="clip" id="A" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="S">S
+                <audio class="clip" id="S" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-6.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="D">D
+                <audio class="clip" id="D" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Dsc_Oh.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="Z">Z
+                <audio class="clip" id="Z" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Kick_n_Hat.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="X">X
+                <audio class="clip" id="X" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/RP4_KICK_1.mp3"></audio>
+            </button>
+            <button class="drum-pad" id="C">C
+                <audio class="clip" id="C" preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Cev_H2.mp3"></audio>
+            </button>
+        </div>
+        <!-- part2 -->
+        <div id="bottom-part">
+            <label>On</label>    
+                <div class="switch" id="power-button">      
+                    <div class="slider"></div>
+                </div>
+            <label>Off</label>
+
+            <div id="display"></div>
+
+            <label for="volume-slider">Volume:</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+       </div>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

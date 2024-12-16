@@ -1,0 +1,104 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cfdef2;
+}
+
+#drum-machine{
+    background-color:aliceblue;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #191269;
+}
+
+ .drum-pads{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 20px;
+    cursor: pointer;
+    width: 70%;
+    background-color: #cfdef2;
+ }
+
+ .drum-pad{
+  border-radius: 15px;
+  width: 28%;
+  margin-bottom: 20px;
+  height:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050a0b;
+  transition: tranform 0.5s;
+  color: aliceblue;
+  font-size: 2em;
+ }
+
+ .drum-pad:hover{
+    transform: translateY(-5px);
+ }
+
+#bottom-part{
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+    border:3px solid #050a0b;
+}
+
+
+.drum-pads, #display {
+    margin: 10px 0; /* ระยะห่างระหว่าง pad และ display */
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;height: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(33, 49, 121);
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    translate: transfrom 0.5s ease-in-out;
+    background-color: aliceblue;
+}
+
+.power-off{
+    transform: translateX(20px);
+}
+
+#display{
+    margin-top: 10px;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(179, 207, 232);
+    height: 45px;
+    width: 250px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
